@@ -13,7 +13,9 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Generate password function
 function generatePassword() {
+  // Var declare
   var numChoice = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var uppChoice = [
     "A",
@@ -105,27 +107,21 @@ function generatePassword() {
     "}",
     "~",
   ];
+
+  var passChoice = [];
+
+  // Prompt for password length
+  var lenChoice = window.prompt(
+    "Please choose the character length of your new password between 8 and 128."
+  );
+
+  if (lenChoice < 8 || lenChoice > 128) {
+    alert("Please choose a value between 8 and 128.");
+    return generatePassword();
+  } else if (isNaN(lenChoice)) {
+    alert("Value entered is not a number.");
+    return generatePassword();
+  } else {
+    alert("Your new password will be " + lenChoice + " characters long.");
+  }
 }
-
-// // Var declare
-// var numChoice = ["0123456789"];
-// var uppChoice = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-// var lowChoice = ["abcdefghijklmnopqrstuvwxyz"];
-// var SpeChoice = [" !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"];
-
-// var userChoice = "";
-
-// function generatePassword() {
-//   // Prompt user choice for numbers
-//   var numChoice = prompt(
-//     "Include numbers in your new password? \n('Y' for yes, 'N' for no)"
-//   );
-
-//   if (numChoice == "N") {
-//     confirm("You have chosen not to include numbers in your new password.");
-//   } else if (numChoice === false) {
-//     alert("Closing password generator, thank you.");
-//   } else {
-//     var userChoice = userChoice.push[i];
-//   }
-// }
