@@ -1,8 +1,6 @@
 # Project Description
 
-A study in generating randomized passwords in JavaScript
-
-worked with keegan, george, and meera in a 1/7 study group.
+A study in generating randomized passwords in JavaScript.
 
 ## Contents
 
@@ -47,7 +45,7 @@ See below for a screenshot of the project post-refactor.
 
 [Link to the GitHub repo for this project](https://github.com/Aoliva96/password-generator)
 
-[Link to the deployed project on GitPages - Coming Soon!]()
+[Link to the deployed project on GitPages](https://aoliva96.github.io/password-generator/)
 
 ## Collaborators
 
