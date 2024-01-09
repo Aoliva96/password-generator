@@ -54,13 +54,15 @@ See below for a screenshot of the project post-refactor.
 I collaborated with Keegan Royal-Eisenberg, George Shultz, and Meera G.K. in a study-group on 1/07/24, in which we compared code and attempted to find solutions to each others' bugs.
 I made modifications to the following areas of my code while comparing with Meera G.K., as our initial approaches were the most similar of the group.
 
-- used window.confirm and window.alerts while prompting for user input.
-- checked whether users entered any parameters at all with a conditional statement.
-- checked whether users enter a NaN value for password length during the first prompt.
+- Used window.confirm and window.alerts while prompting for user input.
+- Checked whether users entered any parameters at all with a conditional statement.
+- Checked whether users enter a NaN value for password length during the first prompt.
 
-### Note, project code still incomplete after 1/07 study group. I made the following changes after seeking advice in 1/08 class office hours.
+### Note, project code still incomplete after 1/07 study group. I made the following changes after seeking advice in 1/08 class.
 
--
+- Confirmed that bug was caused by overwriting each choice variable with boolean value.
+- Followed suggestion from Keegan that initial variable arrays may need to exist outside of generatePassword function.
+- Followed suggestion from Keegan to add "this." to variable concatenation.
 
 ## Resources
 

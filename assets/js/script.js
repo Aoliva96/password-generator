@@ -1,100 +1,100 @@
 // Assignment code here
 
+// Var declare
+var numChoice = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var uppChoice = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
+var lowChoice = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
+var speChoice = [
+  " !",
+  '"',
+  "#",
+  "$",
+  "%",
+  "&",
+  "'",
+  "(",
+  ")",
+  "*",
+  "+",
+  ",",
+  "-",
+  ".",
+  "/",
+  ":",
+  ";",
+  "<",
+  "=",
+  ">",
+  "?",
+  "@",
+  "[",
+  "\\",
+  "]",
+  "^",
+  "_",
+  "`",
+  "{",
+  "|",
+  "}",
+  "~",
+];
+
 // Generate password function
 function generatePassword() {
-  // Var declare
-  var numChoice = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  var uppChoice = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-  ];
-  var lowChoice = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-  ];
-  var SpeChoice = [
-    " !",
-    '"',
-    "#",
-    "$",
-    "%",
-    "&",
-    "'",
-    "(",
-    ")",
-    "*",
-    "+",
-    ",",
-    "-",
-    ".",
-    "/",
-    ":",
-    ";",
-    "<",
-    "=",
-    ">",
-    "?",
-    "@",
-    "[",
-    "\\",
-    "]",
-    "^",
-    "_",
-    "`",
-    "{",
-    "|",
-    "}",
-    "~",
-  ];
-
   var passChoice = [];
 
   // Prompt for password length
@@ -163,23 +163,23 @@ function generatePassword() {
 
   // Concat values
   if (numChoice) {
-    passChoice = passChoice.concat(numChoice);
+    passChoice = passChoice.concat(this.numChoice);
   }
 
   if (uppChoice) {
-    passChoice = passChoice.concat(uppChoice);
+    passChoice = passChoice.concat(this.uppChoice);
   }
 
   if (lowChoice) {
-    passChoice = passChoice.concat(lowChoice);
+    passChoice = passChoice.concat(this.lowChoice);
   }
 
   if (speChoice) {
-    passChoice = passChoice.concat(speChoice);
+    passChoice = passChoice.concat(this.speChoice);
   }
 
   // Generate Final Password
-  var finalPass = "";
+  var finalPass = [];
 
   for (var i = 0; i < lenChoice; i++) {
     var addPass = [Math.floor(Math.random() * passChoice.length)];
